@@ -34,7 +34,19 @@ a:hover {
 }
 
 
-/* header and footer styling*/
+/* page margin */
+
+.header, .footer {
+    background-color: rgba(100, 180, 119, 0.88);
+    padding: 16px 144px;
+}
+
+.section-one, .section-two, .section-three, .section-four {
+    padding: 30px 144px;
+}
+
+
+/* header styling*/
 
 .header {
     display: flex;
@@ -56,22 +68,23 @@ a:hover {
     margin-right: 16px;
 }
 
+
+/* footer styling*/
+
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-.header, .footer {
-    background-color: rgba(100, 180, 119, 0.88);
-    padding: 16px 144px;
+.footer p {
+    margin: 10px;
 }
 
-.section-one, .section-two, .section-three, .section-four {
-    padding: 30px 144px;
+#ytremia-github {
+    text-decoration: underline rgb(0, 0, 0) wavy 1px;
 }
-
 
 /* section one */
 
