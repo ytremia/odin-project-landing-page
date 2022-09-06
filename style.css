@@ -20,15 +20,40 @@ li {
     margin: 16px;
 }
 
+/* link styling */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: palevioletred;
+    text-decoration: underline black wavy 1px;
+}
+
+a:visited {
+    color: black;
+}
+
+/* header and footer styling*/
+
 .header {
-    background-color: rgb(197, 236, 197);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 80px;
 }
 
 .footer {
-    background-color: rgb(197, 236, 197);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +61,7 @@ li {
 
 
 .header, .footer {
+    background-color: rgb(100, 180, 119);
     padding: 16px 80px;
 }
 
@@ -43,10 +69,12 @@ li {
     padding: 30px 80px;
 }
 
+
 /* section one */
 
 .section-one {
-    background-color: rgb(197, 236, 197);
+    background-color: rgb(100, 180, 119);
+    color: rgb(0, 0, 0);
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -55,14 +83,13 @@ li {
 }
 
 .intro {
-    background-color: aliceblue;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1 1 200px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .section-one img {
@@ -78,9 +105,10 @@ li {
 .section-two {
     display: flex;
     flex-direction: column;
-    background-color: rgb(254, 215, 221);
+    background-color:  rgb(231, 173, 181);
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .profiles {
@@ -100,10 +128,11 @@ li {
 
 .profile-individual img {
     width: 150px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: solid;
     border-width: thin;
 }
+
 
 /* section three */
 
@@ -115,10 +144,14 @@ li {
 }
 
 .quote-box {
-    background-color: white;
     display: flex;
     width: 500px;
     flex-direction: column;
+}
+
+#quote {
+    font-style: italic;
+    font-size: 18px;
 }
 
 #quote-author {
@@ -130,14 +163,15 @@ li {
 
 .section-four {
     display: flex;
-    background-color: cadetblue;
+    background-color: rgb(231, 173, 181);
     justify-content: center;
 }
 
 .sign-up-banner {
     display: flex;
-    background-color: azure;
-    padding: 16px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 16px 32px;
     gap: 5px 25px;
     align-items: center;
     flex-wrap: wrap;
