@@ -52,7 +52,8 @@ a:hover {
 }
 
 .header-logo {
-    width: 80px;
+    height: 48px;
+    margin-right: 16px;
 }
 
 .footer {
@@ -64,11 +65,11 @@ a:hover {
 
 .header, .footer {
     background-color: rgba(100, 180, 119, 0.88);
-    padding: 16px 80px;
+    padding: 16px 144px;
 }
 
 .section-one, .section-two, .section-three, .section-four {
-    padding: 30px 80px;
+    padding: 30px 144px;
 }
 
 
