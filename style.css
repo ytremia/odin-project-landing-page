@@ -1,0 +1,144 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 16px;
+}
+
+.header {
+    background-color: rgb(197, 236, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(197, 236, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header, .footer {
+    padding: 16px 80px;
+}
+
+.section-one, .section-two, .section-three, .section-four {
+    padding: 30px 80px;
+}
+
+/* section one */
+
+.section-one {
+    background-color: rgb(197, 236, 197);
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro {
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.section-one img {
+    width: auto;
+}
+
+.section-one h1 {
+    margin: 0;
+}
+
+/* section two */
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 215, 221);
+    justify-content: center;
+    align-items: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.profile-individual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-individual img {
+    width: 150px;
+    background-color: white;
+    border: solid;
+    border-width: thin;
+}
+
+/* section three */
+
+.section-three {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box {
+    background-color: white;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+#quote-author {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* section four */
+
+.section-four {
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+}
+
+.sign-up-banner {
+    display: flex;
+    background-color: azure;
+    padding: 16px 50px;
+    gap: 5px 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
