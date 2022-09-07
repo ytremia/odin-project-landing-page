@@ -206,7 +206,7 @@ ul {
 }
 
 
-/* hovertext styling*/
+/* hovertext tooltip styling*/
 
 .hovertext {
     position: relative;
@@ -254,12 +254,13 @@ ul {
 
 
 .hovertext:hover:before, .hovertext:hover:after {
+    /* makes tooltip visible upon hover*/
     opacity: 1;
     visibility: visible;
 }
 
 
-/* link & button styling */
+/* link styling */
 a:link {
     color: black;
     text-decoration: none;
@@ -273,6 +274,8 @@ a:hover, a:focus {
     color: palevioletred;
     text-decoration: underline palevioletred wavy 1px;
 }
+
+/* button styling */
 
 button a:hover {
     color: black;
