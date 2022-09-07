@@ -5,26 +5,6 @@ body {
     margin: 0;
 }
 
-button {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* link styling */
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: palevioletred;
-    text-decoration: underline palevioletred wavy 1px;
-}
-
-
 /* page margin */
 
 .header, .footer {
@@ -218,4 +198,67 @@ ul {
 
 .flip-horizontally {
     transform: scaleX(-1);
+}
+
+
+/* hovertext styling*/
+
+.hovertext {
+    position: relative;
+    display: inline-block;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0x;
+    width: max-content; /* tooltip length depends on content*/
+    background-color: rgb(100, 180, 119);
+    color: #fff;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* link & button styling */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover, a:focus {
+    color: palevioletred;
+    text-decoration: underline palevioletred wavy 1px;
+}
+
+button a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+button:hover, button:focus{
+    background-color: palevioletred;
+    border-radius: 3px;
 }
