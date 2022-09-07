@@ -209,25 +209,39 @@ ul {
 }
 
 .hovertext:before {
+    /* main tooltip body*/
     content: attr(data-hover);
     visibility: hidden;
-    opacity: 0x;
+
     width: max-content; /* tooltip length depends on content*/
     background-color: rgb(100, 180, 119);
     color: #fff;
     text-align: center;
-    border: 1px solid black;
+    border: 1px none black;
     border-radius: 5px;
     padding: 5px;
-    transition: opacity 1s ease-in-out;
 
     position: absolute;
     z-index: 1;
-    left: 0;
-    top: 110%;
+    top: 10%;
+    right: 85%;
 }
 
-.hovertext:hover:before {
+.hovertext:after {
+    /* tooltip arrow */
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    top: 17.5%;
+    left: 15%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(100, 180, 119);
+}
+
+
+.hovertext:hover:before, .hovertext:hover:after {
     opacity: 1;
     visibility: visible;
 }
