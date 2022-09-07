@@ -212,6 +212,7 @@ ul {
     /* main tooltip body*/
     content: attr(data-hover);
     visibility: hidden;
+    opacity: 0;
 
     width: max-content; /* tooltip length depends on content*/
     background-color: rgb(100, 180, 119);
@@ -225,12 +226,16 @@ ul {
     z-index: 1;
     top: 10%;
     right: 85%;
+
+    transition: opacity 0.1s ease-in-out;
 }
 
 .hovertext:after {
     /* tooltip arrow */
     content: "";
     visibility: hidden;
+    opacity: 0;
+
     position: absolute;
     top: 17.5%;
     left: 15%;
@@ -238,6 +243,8 @@ ul {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent rgb(100, 180, 119);
+
+    transition: opacity 0.1s ease-in-out;
 }
 
 
