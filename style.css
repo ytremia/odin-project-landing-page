@@ -136,6 +136,11 @@ ul {
     border-width: thin;
 }
 
+.profile-individual img:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
 .profile-individual p {
     margin: 10px;
 }
