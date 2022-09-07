@@ -285,6 +285,6 @@ button {
 }
 
 button:hover, button:focus{
-    background-color: palevioletred;
+    background-color: rgb(231, 173, 181);
     border-radius: 3px;
 }
