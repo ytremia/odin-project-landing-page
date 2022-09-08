@@ -75,7 +75,7 @@ ul {
     display: flex;
     gap: 16px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -89,13 +89,14 @@ ul {
     align-items: center;
     text-align: center;
     border: 1px solid black;
-    min-height: 225px;
+    min-height: 250px;
     min-width: 420px;
 }
 
 .section-one img {
-    height: 250px;
+    min-height: 250px;
     padding: 0px;
+    border: 1px solid black;
 }
 
 .section-one h1 {
@@ -284,7 +285,9 @@ button a:hover {
 
 button {
     font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
     cursor: pointer;
+    padding: 6px;
 }
 
 button:hover, button:focus{
