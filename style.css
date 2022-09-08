@@ -21,11 +21,11 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex: 1;
-    gap: 10px;
+    gap: 10px 250px;
 }
 
 .header-left {
